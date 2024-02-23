@@ -1,0 +1,4 @@
+settings:
+  particle-effect: SOUL_FIRE_FLAME
+  particles-per-second: 10
+  plugin-prefix: "&7[&6Territory&7] "
