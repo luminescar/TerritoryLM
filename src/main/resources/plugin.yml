@@ -2,18 +2,16 @@ name: TerritoryPlugin
 version: '1.0'
 main: me.luminescar.territory.TerritoryPlugin
 author: luminescar
-description: Your plugin description
+description: A plugin for marking and creating territories with particle effects.
 
 commands:
   territory:
     description: Main command for TerritoryPlugin
     usage: /territory <mark/create/delete/list/help>
-    aliases: [ter]
 
 permissions:
   territory.admin:
     description: Allows access to all TerritoryPlugin commands
     default: op
 
-
-
+website: https://github.com/luminescar/TerritoryLM

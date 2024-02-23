@@ -22,7 +22,6 @@ public class TerritoryPlugin extends JavaPlugin implements CommandExecutor {
 
     private final Map<UUID, Location[]> markedTerritories = new HashMap<>();
     private String pluginPrefix;
-    private Player player;
 
     @Override
     public void onEnable() {
@@ -136,7 +135,6 @@ public class TerritoryPlugin extends JavaPlugin implements CommandExecutor {
     private void listTerritories(Player player) {
         // Implementation of list command
         // ...
-        this.player = player;
     }
 
     private void showHelp(Player player) {
@@ -173,6 +171,8 @@ public class TerritoryPlugin extends JavaPlugin implements CommandExecutor {
 
         // Save territory settings to file
         saveTerritorySettings(player, cuboid, territoryName);
+
+        player.sendMessage(pluginPrefix + ChatColor.GREEN + "Territory '" + territoryName + "' created successfully.");
     }
 
     private void deleteTerritory(Player player, String territoryName) {
